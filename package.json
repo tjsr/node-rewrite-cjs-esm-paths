@@ -1,0 +1,36 @@
+{
+  "name": "rewrite-cjs-esm-paths",
+  "version": "0.0.0",
+  "description": "cli to rename file extensions and rewrite imports for commonjs (cjs) and esm after typescript build",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "rewrite-cjs": "./bin/rewrite-cjs.js",
+    "rewrite-esm": "./bin/rewrite-esm.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://githbub.com/tjmehta/node-rewrite-cjs-esm-paths"
+  },
+  "keywords": [
+    "rewrite",
+    "rename",
+    "move",
+    "commonjs",
+    "cjs",
+    "esm",
+    "mjs",
+    "typescript",
+    "ts",
+    "move",
+    "module",
+    "exports",
+    "imports",
+    "requires"
+  ],
+  "author": "Tejesh Mehta",
+  "license": "MIT"
+}
