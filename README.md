@@ -9,7 +9,10 @@ npm i --save-dev rewrite-cjs-esm-paths
 # Usage
 Use commandline
 ```bash
-
+# recursively renames all *.js files in 'dist/cjs' to *.cjs in 'dist/cjs', and rewrites `require` statements to include .cjs
+rewrite-cjs dist/cjs
+# recursively renames all *.js files in 'dist/mjs' to *.mjs, and rewrites `import` statements to include .mjs
+rewrite-cjs dist/mjs
 ```
 
 Use in package.json
