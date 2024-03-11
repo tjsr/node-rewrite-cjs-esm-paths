@@ -26,3 +26,6 @@ Use in package.json
   }
 }
 ```
+
+# License
+MIT
