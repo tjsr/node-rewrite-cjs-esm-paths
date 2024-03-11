@@ -1,6 +1,6 @@
 {
   "name": "rewrite-cjs-esm-paths",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cli to rename file extensions and rewrite imports for commonjs (cjs) and esm after typescript build",
   "type": "module",
   "main": "index.js",
