@@ -1,3 +1,7 @@
+# v1.0.2
+
+- patch: fix build
+
 # v1.0.1
 
 - patch: readme
