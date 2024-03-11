@@ -1,6 +1,10 @@
 # v1.0.2
 
-- patch: fix buildgst
+- patch: fix import regexps
+
+# v1.0.2
+
+- patch: fix build
 
 
 # v1.0.1

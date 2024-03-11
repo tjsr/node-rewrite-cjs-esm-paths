@@ -40,22 +40,22 @@ export function replaceFileContent(filepath, search, replace) {
 }
 
 export function replaceAllRequireExtensions(filepath, oldExtension, newExtension) {
-  const search = new RegExp(`require\\(['"]\\.(.*)(\\.${oldExtension})?['"]\\)`, 'g')
-  const replace = `require('$1.${newExtension}')`
+  const search = new RegExp(`(require\\(['"]\\..*)(\\.${oldExtension})?(['"]\\))`, 'g')
+  const replace = `$1.${newExtension}$3`
 
   replaceFileContent(filepath, search, replace)
 }
 
 function _replaceAllAsyncImportExtensions(filepath, oldExtension, newExtension) {
-  const search = new RegExp(`import\\(['"]\\.(.*)(\\.${oldExtension})?['"]\\)`, 'g')
-  const replace = `import('$1.${newExtension}')`
+  const search = new RegExp(`(import\\(['"]\\..*)(\\.${oldExtension})?(['"]\\))`, 'g')
+  const replace = `$1.${newExtension}$3`
 
   replaceFileContent(filepath, search, replace)
 }
 
 function _replaceAllImportFromExtensions(filepath, oldExtension, newExtension) {
-  const search = new RegExp(`from\\s+['"]\\.(.*)(\\.${oldExtension})?['"]`, 'g')
-  const replace = `from '$1.${newExtension}'`
+  const search = new RegExp(`(from\\s+['"]\\..*)(\\.${oldExtension})?(['"])`, 'g')
+  const replace = `$1.${newExtension}$3`
 
   replaceFileContent(filepath, search, replace)
 }
