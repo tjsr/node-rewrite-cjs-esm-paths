@@ -1,6 +1,7 @@
 # v1.0.2
 
-- patch: fix build
+- patch: fix buildgst
+
 
 # v1.0.1
 
