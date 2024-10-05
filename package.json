@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://githbub.com/tjmehta/node-rewrite-cjs-esm-paths"
+    "url": "https://github.com/tjmehta/node-rewrite-cjs-esm-paths"
   },
   "keywords": [
     "rewrite",
